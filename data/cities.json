@@ -1,40 +1,52 @@
 {
   "cities": [
     {
-      "cityName": "Lisbon",
-      "country": "Portugal",
-      "emoji": "🇵🇹",
-      "date": "2027-10-31T15:59:59.138Z",
-      "notes": "My favorite city so far!",
+      "id": "a974",
+      "cityName": "Washington",
+      "country": "United States of America (the)",
+      "emoji": "🇺🇸",
+      "date": "2024-07-12T22:10:25.659Z",
+      "notes": "fun",
       "position": {
-        "lat": 38.727881642324164,
-        "lng": -9.140900099907554
-      },
-      "id": 73930385
+        "lat": "38.87392853923632",
+        "lng": "-77.01416015625001"
+      }
     },
     {
-      "cityName": "Madrid",
-      "country": "Spain",
-      "emoji": "🇪🇸",
-      "date": "2027-07-15T08:22:53.976Z",
-      "notes": "",
+      "id": "f2bc",
+      "cityName": "Monrovia",
+      "country": "Liberia",
+      "emoji": "🇱🇷",
+      "date": "2024-07-12T22:48:51.479Z",
+      "notes": "fun",
       "position": {
-        "lat": 40.46635901755316,
-        "lng": -3.7133789062500004
-      },
-      "id": 17806751
+        "lat": "6.315298538330033",
+        "lng": "-10.772094726562502"
+      }
     },
     {
-      "cityName": "Berlin",
-      "country": "Germany",
-      "emoji": "🇩🇪",
-      "date": "2027-02-12T09:24:11.863Z",
-      "notes": "Amazing 😃",
+      "id": "53cd",
+      "cityName": "Havana",
+      "country": "Cuba",
+      "emoji": "🇨🇺",
+      "date": "2024-07-12T22:49:09.965Z",
+      "notes": "test",
       "position": {
-        "lat": 52.53586782505711,
-        "lng": 13.376933665713324
-      },
-      "id": 98443197
+        "lat": "23.03929774776974",
+        "lng": "-82.44140625000001"
+      }
+    },
+    {
+      "id": "7df1",
+      "cityName": "Sacramento",
+      "country": "United States of America (the)",
+      "emoji": "🇺🇸",
+      "date": "2024-07-12T22:51:50.226Z",
+      "notes": "cool",
+      "position": {
+        "lat": "38.5771583773376",
+        "lng": "-121.46072387695314"
+      }
     }
   ]
 }
