@@ -25,18 +25,6 @@
       }
     },
     {
-      "id": "53cd",
-      "cityName": "Havana",
-      "country": "Cuba",
-      "emoji": "🇨🇺",
-      "date": "2024-07-12T22:49:09.965Z",
-      "notes": "test",
-      "position": {
-        "lat": "23.03929774776974",
-        "lng": "-82.44140625000001"
-      }
-    },
-    {
       "id": "7df1",
       "cityName": "Sacramento",
       "country": "United States of America (the)",
@@ -46,6 +34,30 @@
       "position": {
         "lat": "38.5771583773376",
         "lng": "-121.46072387695314"
+      }
+    },
+    {
+      "id": "2fcd",
+      "cityName": "Austin",
+      "country": "United States of America (the)",
+      "emoji": "🇺🇸",
+      "date": "2024-07-13T03:35:18.658Z",
+      "notes": "test",
+      "position": {
+        "lat": "39.35129035526705",
+        "lng": "-116.80664062500001"
+      }
+    },
+    {
+      "id": "ee44",
+      "cityName": "Township of Washington",
+      "country": "United States of America (the)",
+      "emoji": "🇺🇸",
+      "date": "2024-07-13T03:36:33.161Z",
+      "notes": "test",
+      "position": {
+        "lat": "40.730608477796636",
+        "lng": "-86.06689453125001"
       }
     }
   ]
