@@ -1,4 +1,10 @@
-import { createContext, useContext, useEffect, useReducer } from 'react';
+import {
+  createContext,
+  useCallback,
+  useContext,
+  useEffect,
+  useReducer,
+} from 'react';
 
 const CitiesContext = createContext();
 const BASE_URL = 'http://localhost:3001';
@@ -90,25 +96,29 @@ function CitiesProvider({ children }) {
   }, []);
 
   // Similar to a Get route for backend
-  async function getCity(id) {
-    if (Number(id) === currentCity.id) return;
+  // Adding useCallback hook to avoid creating an infinite loop when adding getCity to the useEffect hook in City.jsx
+  const getCity = useCallback(
+    async (id) => {
+      if (Number(id) === currentCity.id) return;
 
-    dispatch({ type: 'loading' });
-    try {
-      // setIsLoading(true);
-      const res = await fetch(`${BASE_URL}/cities/${id}`);
-      const data = await res.json();
+      dispatch({ type: 'loading' });
+      try {
+        // setIsLoading(true);
+        const res = await fetch(`${BASE_URL}/cities/${id}`);
+        const data = await res.json();
 
-      //setCurrentCity(data);
-      dispatch({ type: 'city/loaded', payload: data });
-    } catch {
-      // alert('There was an error loading data...');
-      dispatch({
-        type: 'rejected',
-        payload: 'There was an error loading city...',
-      });
-    }
-  }
+        //setCurrentCity(data);
+        dispatch({ type: 'city/loaded', payload: data });
+      } catch {
+        // alert('There was an error loading data...');
+        dispatch({
+          type: 'rejected',
+          payload: 'There was an error loading city...',
+        });
+      }
+    },
+    [currentCity.id]
+  );
 
   // Similar to a Post route for backend
   async function createCity(newCity) {
